@@ -67,7 +67,8 @@ const Container = styled.div`
   gap: 1rem;
   position: relative; /* Relative positioning for the container */
 
-  @media screen and (min-width: 720px) and (max-width: 1080px) {
+  @media screen and (max-width: 1080px) {
+    grid-template-columns: 10% 90%; /* Adjust column widths */
     padding: 1rem;
   }
 
@@ -76,6 +77,8 @@ const Container = styled.div`
     align-items: center;
     color: white;
     gap: 1rem;
+    margin-top: -5rem; /* Ensure this works well across all screen sizes */
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
   }
 
   .emoji {
@@ -92,18 +95,18 @@ const Container = styled.div`
     border-radius: 2rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem; /* Adjusted from 2rem for better spacing */
     background-color: #ffffff34;
-    margin-top: 1rem; /* Adjusted margin top for spacing */
+    margin-top: -5rem; /* Adjusted margin top for spacing */
 
     input {
       width: 90%;
-      height: 100%; /* Adjusted height to fill container */
+      height: 100%;
       background-color: transparent;
       color: white;
       border: none;
       padding: 1rem;
-      font-size: 1.6rem;
+      font-size: 1.4rem; /* Adjusted font size for input fields */
 
       &::selection {
         background-color: #9a86f3;
@@ -116,9 +119,6 @@ const Container = styled.div`
     button {
       padding: 0.5rem 2rem;
       border-radius: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       background-color: #9a86f3;
       border: none;
 
@@ -131,13 +131,10 @@ const Container = styled.div`
 
   .emoji-picker-wrapper {
     position: absolute;
-    top: -450px;
+    top: -500px; /* Ensure this value is adjusted for responsive behavior */
     background-color: #080420;
     box-shadow: 0 5px 10px #9a86f3;
     border-color: #9a86f3;
-    .emoji-scroll-wrapper::-webkit-scrollbar {
-      background-color: #080420;
-      width: 5px;
 
     .emoji-scroll-wrapper::-webkit-scrollbar {
       width: 5px;

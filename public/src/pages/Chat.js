@@ -95,10 +95,12 @@ const Container = styled.div`
 
     @media screen and (min-width: 720px) and (max-width: 1080px) {
       grid-template-columns: 35% 65%;
+      font-size: 1rem; /* Adjusted font size for medium screens */
     }
 
     @media screen and (min-width: 480px) and (max-width: 720px) {
       grid-template-columns: 40% 60%;
+      font-size: 0.9rem; /* Adjusted font size for smaller screens */
     }
 
     @media screen and (max-width: 480px) {
@@ -106,6 +108,7 @@ const Container = styled.div`
       height: 90vh;
       grid-template-columns: 100%;
       grid-template-rows: 1fr 2fr;
+      font-size: 0.8rem; /* Adjusted font size for extra small screens */
     }
   }
 `;
@@ -116,4 +119,9 @@ const WelcomeContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  font-size: 1.2rem; /* Default font size */
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+  }
 `;

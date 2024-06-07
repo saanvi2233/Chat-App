@@ -82,6 +82,7 @@ const Container = styled.div`
     h3 {
       color: white;
       text-transform: uppercase;
+      font-size: 0.9rem; /* Adjusted font size for smaller screens */
     }
   }
 
@@ -122,6 +123,7 @@ const Container = styled.div`
       .username {
         h3 {
           color: white;
+          font-size: 0.9rem; /* Adjusted font size for smaller screens */
         }
       }
     }
@@ -136,7 +138,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem; /* Adjusted gap for smaller screens */
 
     .avatar {
       img {
@@ -148,6 +150,7 @@ const Container = styled.div`
     .username {
       h1 {
         color: white;
+        font-size: 1.2rem; /* Adjusted font size for smaller screens */
       }
     }
 
@@ -156,7 +159,7 @@ const Container = styled.div`
 
       .username {
         h1 {
-          font-size: 1rem;
+          font-size: 1rem; /* Further adjusted font size for medium screens */
         }
       }
     }
