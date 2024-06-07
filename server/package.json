@@ -7,11 +7,12 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "build":"npm i" 
-  }, 
+    "build": "npm i"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "argon2": "^0.40.3",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
